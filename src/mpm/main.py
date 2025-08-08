@@ -13,7 +13,7 @@ LOG.addHandler(logging.StreamHandler())
 
 # Allow alphanumeric strings, optionally followed by a dot
 # and a number indicating section.
-ALLOWED_TOPIC_INPUT = re.compile(r"^[a-zA-Z0-9_\-]+(\.\d+)?$")
+ALLOWED_TOPIC_INPUT = re.compile(r"^[a-zA-Z0-9_\-]+(\.[a-zA-Z0-9_]+)*$")
 
 # Allow all characters needed for regular expression search
 ALLOWED_SEARCH_INPUT = re.compile(
